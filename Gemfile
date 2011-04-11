@@ -7,7 +7,12 @@ gem 'rails', '3.0.6'
 
 gem 'mongoid', '~> 2.0'
 gem 'bson_ext', '~> 1.2'
-
+group :development, :test do
+  gem 'fabrication'
+end
+group :test do
+  gem 'database_cleaner'
+end
 # Use unicorn as the web server
 # gem 'unicorn'
 
